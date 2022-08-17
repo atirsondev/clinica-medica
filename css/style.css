@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(32, 146, 161);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 15px;
+}
+
+.logo-header, .logo-footer {
+  width: 140px;
+}
+
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-size: 18px;
+  transition: 0.4s;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid black;
+}
+
+.header-background {
+  width: 100%;
+  height: 600px;
+  background-image: url('../img/recepcao.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.description-background {
+  color: #fff;
+  font-size: 40px;
+  padding-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.limit-area {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  color: #393939
+}
+
+.title-global {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.description-global {
+  line-height: 24px;
+  padding: 5px 0px;
+}
+
+.content-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.content-sobre p {
+  padding: 20px;
+  text-transform: uppercase;
+  color: #393939;
+}
+
+.content-sobre ul {
+  margin-left: 50px;
+}
+
+.content-sobre ul li {
+  line-height: 22px;
+  text-align: left;
+}
+
+.container-tree-images {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.specialties-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content-specialties {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.specialties {
+  padding: 15px;
+  color: #585656;
+  font-weight: bold;
+}
+
+.content-specialties:hover {
+  border-color: black;
+  box-shadow:0px 0px 10px 4px #585656;
+}
+
+.hourly {
+  width: 200px;
+}
+
+.title-hourly {
+  font-size: 24px;
+  background-color: rgb(43, 182, 201);
+  padding: 10px 0px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.iframe {
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(20, 85, 94);
+}
+
+.description-footer {
+  color: #fff;
+  text-align: center;
+}
+
+@media(max-width: 444px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo-header, .logo-footer {
+    width: 100px;
+  }
+  .navbar {
+    padding-bottom: 10px;
+  }
+  .img-medico {
+    display: none;
+  }
+  .description-background {
+    font-size: 26px;
+    text-align: center;
+  }
+  
+}
+
+@media(max-width: 320px) {
+  .navbar a {
+    font-size: 14px;
+  }
+}
+
